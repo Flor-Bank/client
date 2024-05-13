@@ -1,7 +1,9 @@
-<div class="w-full h-screen flex flex-col overflow-y-scroll">
+<div class="w-full h-screen flex flex-col">
   <!-- navbar -->
-  <app-navmenu></app-navmenu>
-  <div class="relative top-0">
+  <div class="sticky">
+    <app-navmenu></app-navmenu>
+  </div>
+  <div class="relative h-screen overflow-y-scroll top-0">
     <!-- dinamic  routes-->
     <router-outlet></router-outlet>
   </div>
